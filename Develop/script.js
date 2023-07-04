@@ -9,6 +9,44 @@ var specialChars = ['!','@','#','$','%','^','&','*','+','-','=','_','<','>','?',
 var pass = [];
 var completedPass = [];
 
+let passwordLength = prompt("How long would you like your password to be? Password must be between 8-128 characters");
+  if (passwordLength < 8 || passwordLength > 128) {
+    alert("Password must be between 8-128 characters");
+    return;
+  } else {
+    alert("Password will be " + passwordLength + " characters long");
+  }
+  
+  let addupperCase = confirm("would you like uppercase letters in your password?")
+  if (addupperCase === true) {
+    alert("Password will contain uppercase characters");
+  } else {
+    alert("Password will not contain any uppercase characters");
+  }
+
+  let addlowerCase = confirm("would you like lowercase letters in your password?")
+  if (addlowerCase === true) {
+    alert("Password will contain lowercase characters");
+  } else {
+    alert("Password will not contain any lowercase characters");
+  }
+
+  let addnumberVal = confirm("would you like number values in your password?")
+  if (addnumberVal === true) {
+    alert("Password will contain number value");
+  } else {
+    alert("Password will not contain any number value");
+  }
+
+  let addspecialChars = confirm("would you like special characters letters in your password?")
+  if (addspecialChars === true) {
+    alert("Password will contain special characters");
+  } else {
+    alert("Password will not contain any special characters");
+  }
+
+
+ 
 }
 
 
