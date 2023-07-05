@@ -12,7 +12,7 @@ var completedPass = [];
 let passwordLength = prompt("How long would you like your password to be? Password must be between 8-128 characters");
   if (passwordLength < 8 || passwordLength > 128) {
     alert("Password must be between 8-128 characters");
-    return;
+    return ("Please start over!");
   } else {
     alert("Password will be " + passwordLength + " characters long");
   }
@@ -45,8 +45,29 @@ let passwordLength = prompt("How long would you like your password to be? Passwo
     alert("Password will not contain any special characters");
   }
 
+  if(addupperCase === true) {
+    pass = pass.concat(upperCase);
+  }
 
- 
+  if(addlowerCase === true) {
+    pass = pass.concat(lowerCase);
+  }
+
+  if(addupperCase === true) {
+    pass = pass.concat(numberValue);
+  }
+
+  if(addupperCase === true) {
+    pass = pass.concat(specialChars);
+  }
+
+  for (var i = 0; i < passwordLength; i++) {
+   completedPass[i] = pass [Math.floor(Math.random() *pass.length)];
+
+  }
+
+  return completedPass.join("");
+
 }
 
 
