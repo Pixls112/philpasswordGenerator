@@ -25,9 +25,11 @@ This is the link to access the site launched by github
 
 ## Github
 
+https://github.com/Pixls112/philpasswordGenerator
 
 ## Launched Website
 
+https://pixls112.github.io/philpasswordGenerator/
 
 ## License
 
